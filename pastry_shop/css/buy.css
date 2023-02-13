@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#mainSection{
+    background-color: rgb(196, 114, 8);
+    width: 100vw;
+    height: 1000px;
+    padding-top: 100px;
+}
+#mainContainer{
+    right: 0;left: 0;margin-right: auto;margin-left: auto;
+    background-color: aqua;
+    width: 90%;
+    height: 100%;
+}
+#mainMiddle{
+    display: flex;
+    right: 0;left: 0;margin-right: auto;margin-left: auto;
+    background-color: blue;
+    
+    width: 95%;
+    height: 600px;
+}
+#mainLeft{
+    background-color: aquamarine;
+    width: 50%;
+    height: 100%;
+
+}
+#mainRight{
+    background-color: chocolate;
+    width: 50%;
+    height: 100%;
+
+}
+#mRightTop{
+    background-color: gray;
+    height: 70%;
+    width: 100%;
+}
+#mRightBottom{
+    background-color: antiquewhite;
+    height: 30%;
+    width: 100%;
+}
+#mRightBottom button{
+    background-color: red;
+    font-size: 2rem;
+    width: 200px;
+    height: 57px;
+}

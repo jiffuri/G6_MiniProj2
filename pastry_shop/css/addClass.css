@@ -1,0 +1,48 @@
+
+
+/* BACKGROUND COLORS */
+.bgRed{
+    background-color: red!important;
+}
+
+
+
+/* HIDE ELEMENTS */
+.hide{
+    display: none;
+    background-color: aqua;
+}
+
+/* EFFECT FOR CLLICKING THE CARDS OF FOUR */
+.fourCardsClick{
+    position: absolute!important;
+    /* background-color: rgb(211, 197, 8)!important; */
+    width: 350px!important;
+    height: 450px!important;
+    z-index: 99!important;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px!important;
+}
+.fimgSize{
+    height: 250px!important;
+}
+.addTopMargin{
+    margin-top: 100px!important;
+}
+.addTopNegativeMargin{
+    margin-top: -70px!important;
+}
+
+/* MINI NAV FIXED POSITION */
+.fixedPosition{
+    position: fixed!important;
+    top: 40px!important;
+}
+/* CHANGE NAV HEIGHT IN HOVER */
+.navChangeHeight{
+    height: 40px!important;
+}
+
+
+
+
+/* MAIN PARODUCT HOVER */

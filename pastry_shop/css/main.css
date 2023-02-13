@@ -1,0 +1,231 @@
+@import './navi.css';
+@import './footer.css';
+
+@import './addClass.css';
+@import './aboutUs.css';
+@import './buy.css';
+
+@import './midScreen.css';
+@import './smallScreen.css';
+
+*{
+    margin: 0px;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+}
+
+    /* HERO SECTION */
+#heroSection{
+    background-color: blue;
+    width: 100vw;
+    height: 70vh;
+}
+#heroContainer{
+    right: 0;left: 0;margin-right: auto;margin-left: auto;
+    width: 90%;
+    height: 100%;
+    background-color: black;
+}
+
+
+    /* FOUR CARD SECTION */
+#fourCards{
+    /* background-color: red; */
+    background-image: linear-gradient(to bottom, transparent, white), url(../img/bak1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    backdrop-filter: blur(4px);
+    background-color: white;
+    width: 100vw;
+    height: 500px;
+    margin-bottom: 30px;
+}
+#fourCardsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    gap: 7px;
+}
+#fourCardsContainer > div{
+    position: relative;
+    background-color: #63cb99;
+    /* border: 1px solid black; */
+    /* border-radius: 20px; */
+    width: 300px;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.f0 h1{
+    text-align: center;
+    padding: 3px;
+}
+.f0 p{
+    position: relative;
+    background-color: #f9bda8;
+    width: 100%;
+    height: 167px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.freadmore{
+    color: #cb0f35;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    font-weight: bolder;
+}
+
+.f0 img{
+
+    position: absolute;
+    bottom: 0;
+    background-color: #63cb99;
+    width: 100%;
+    height: 200px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+    /* DELIVER INFO SECTION */
+#deliveryInfoSection{
+    /* background-color: aquamarine; */
+    background-image: url(../img/roller.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100vw;
+    height: 200px;
+}
+#deliveryInfoContainer{
+    right: 0;left: 0;margin-right: auto;margin-left: auto;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+
+}
+#deliveryInfoContainer div{
+    /* background-color: aqua; */
+    border: 1px solid black;
+    width: 250px;
+    text-align: center;
+    padding-top: 7px;
+}
+#delMid button{
+    height: 57px;
+    width: 200px;
+    font-size: 1.3rem;
+}
+#delMid h1{
+    padding-top: 17px;
+}
+
+/* RECENTLY BOUGHT SECTION */
+#recentlyBoughtSection{
+   /*  position: relative; */
+    /* background-color: gray  ; */
+    width: 100vw;
+    height: 700px;
+}
+#recentlyBoughtContainer{
+    right: 0;left: 0;margin-right: auto;margin-left: auto;
+    width: 90%;
+    height: 100%;
+}
+#recentlyBoughtItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 400px;
+
+}
+#recentlyBoughtItems div{
+    width: 20%;
+    height: 400px;
+    
+}
+#recent1,#recent3,#recent5{
+    background-color: #f9bda8;
+    
+}
+#recent2,#recent4{
+    background-color: #97cfc4;
+}
+#recentlyBoughtItems div img{
+    padding-top: 20px;
+    width: 100%;
+    height: 70%;
+}
+.rButton{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.rButton:hover{
+    color: wheat;
+}
+    /* REVIEW SECTION  */
+#boughtItemRatings{
+    background-color: rgba(255, 228, 196, 0.418);
+    width: 100%;
+    height: 300px;
+}
+#bTop{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 17px;
+
+    font-size: 1.5rem;
+    
+
+}
+#commentContainer{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    /* background-color: black; */
+    height: 80%;
+    gap: 30px;
+}
+#commentContainer div{
+    background-color: #cb0f35;
+    border: 2px solid black;
+    width: 300px;
+    height: 200px;
+}
+
+
+
+
+    /* FAQ SECTION */
+#faqSection{
+    margin-top: -23px;
+    background-color: pink;
+    width: 100vw;
+    height: 370px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TEST CLASS */
+.bgBlue{
+    color: blue;
+    background-color: blue;
+}

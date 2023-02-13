@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+
+
+
+#mainSection{
+    background-color: aquamarine;
+    width: 100vw;
+    height: 1000px;
+}
+#mainContainer{
+    right: 0;left: 0;margin-right: auto;margin-left: auto;
+    background-color: burlywood;
+    width: 90%;
+    height: 100%;
+}
+#mainContainer img{
+    padding-top: 13px;
+    width: 100%;
+}
