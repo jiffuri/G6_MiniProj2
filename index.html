@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="">
+    <title>Mini Project 2</title>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo"><i class="fa-duotone fa-bread-loaf"></i>Bread Temptation</a>
+        <nav class="navbar">
+            <a class="active" href="#">Home</a>
+            <a href="file:///C:/Users/Lenovo/Desktop/web%20development%20course/JAVASCRIPT/Mini%20project%202/website/shop.html">Products</a>
+            <a href="file:///C:/Users/Lenovo/Desktop/web%20development%20course/JAVASCRIPT/Mini%20project%202/website/about.html">About</a>
+            <a href="file:///C:/Users/Lenovo/Desktop/web%20development%20course/JAVASCRIPT/Mini%20project%202/website/review.html">Review</a>
+            <a href="file:///C:/Users/Lenovo/Desktop/web%20development%20course/JAVASCRIPT/Mini%20project%202/website/contact.html#">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <!-- <div id="login-btn" class="fas fa-user"></div> -->
+            <img src="img/user.jpg" class="user-pic" onclick="toggleMenu()">
+        </div>
+
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="img/user.jpg">
+                    <h3>Oland Sayson</h3>
+                </div>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                    <img src="img/profile.jpg" alt="">
+                    <p>Edit Profile</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="img/setting.jpg" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="img/help.jpg" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="img/logout.jpg" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="slides-container">
+            <div class="slide active">
+                <div class="content">
+                    <span>High-fiber diet bread</span>
+                    <h3>upto 50% off</h3>
+                    <a class="btn" onclick="triggerMod()">order</a>
+                </div>
+                <div class="img">
+                    <img src="img/pic1.jpg">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <span>Gluten-free diet bread</span>
+                    <h3>upto 50% off</h3>
+                    <a class="btn" onclick="triggerMod()">order</a>
+                </div>
+                <div class="img">
+                    <img src="img/pic2.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <span>Multigrain bread</span>
+                    <h3>upto 50% off</h3>
+                    <a class="btn" onclick="triggerMod()">order</a>
+                </div>
+                <div class="img">
+                    <img src="img/pic3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+        <div id="prev-slide" class="fas fa-angle-left" onclick="prev()"></div>
+    </section>
+
+<!------------------ Modal ---------------->
+
+    <div class="modal-overlay" id="mod-sample">
+        <div class="modal">
+            <h3>Order for registered customer</h3>
+            <br>
+            Username :<input type="text" placeholder="Username" name="username">
+            <br><br>
+            Password :<input type="password" placeholder="Password" name="password">
+            <br><br>
+            <h3>Oder without registration</h3>
+            <br>
+            Fullname :<input type="fullname" placeholder="Fullname" name="fullname">
+            <br><br>
+            Address :<input type="address" placeholder="address">
+            <div>
+                <button class="btn1" onclick="submitButton()">Submit form</button>
+                <button class="btn2" onclick="this.parentNode.parentNode.parentNode.style.display ='none'">Close form</button>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <section class="banner-container">
+        <div class="banner">
+            <img src="img/pic4.jpg" alt="">
+            <div class="content">
+                <span>limited sales</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="img/pic5.jpg" alt="">
+            <div class="content">
+                <span>limited sales</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="img/pic6.jpg" alt="">
+            <div class="content">
+                <span>limited sales</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+    </section>-->
+
+
+    
+    <div class="heading">
+        <h1>Knows our product category</h1>
+        
+    </div>
+    <section class="category">
+        <h1 class="title">our<span>category</span><a href="#">view all >></a></h1>
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="img/cat1.jpg" alt="">
+                <h3>fresh cupcake</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="img/cat2.jpg" alt="">
+                <h3>cookies</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="img/cat3.jpg" alt="">
+                <h3>brown bread</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="img/cat4.jpg" alt="">
+                <h3>dark chocolate</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="img/cat5.jpg" alt="">
+                <h3>wheat</h3>
+            </a>
+            
+        </div>
+    </section>
+
+
+    
+<!------Footer------->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i>Home</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>Shop</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>About</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>Review</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>Contact</a>
+        </div>
+        <div class="box">
+            <h3>Extra links</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i>My order</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>My favorite</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>My wishlist</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>My account</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>Terms or use</a>
+        </div>
+        <div class="box">
+            <h3>Social Media</h3>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i>Pinterest</a>
+        </div>
+        <div class="box">
+            <h3>News letter</h3>
+            <p>Subscribe for latest update</p>
+            <form action="">
+                <input type="email" placeholder="Enter you email address">
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+            <div class="payments">
+                <a href="#"><img src="img/card1.png" alt=""></a>
+                <a href="#"><img src="img/card2.png" alt=""></a>
+                <a href="#"><img src="img/card3.png" alt=""></a>
+                <a href="#"><img src="img/card4.png" alt=""></a>
+                <a href="#"><img src="img/card5.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
