@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+:root{
+    --click:#eec07b;
+    --darkBrown: #422308;
+    --title: #493b76;
+}
+*{
+    box-sizing: border-box;
+}
+.required:after {
+    content: "*";
+    font-weight: bold;
+    color: red;
+}
+
+#checkOutInput{
+    margin-top: 90px;
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+
+}
+#checkOutInput h1{
+    padding-top: 20px;
+    text-align: center;
+}
+#checkLeft{
+    width: 50%;
+    height: 100vh;
+    background-color: var(--click);
+    display: flex;
+    flex-direction: column;
+    margin: 7px 70px 30px 70px;
+    padding: 0px 40px 0px 40px;
+}
+#checkLeft div{
+
+    padding: 0px 20px 0px 20px;
+    /* text-align: center; */
+}
+#checkLeft div label{
+    /* text-align: left; */
+    margin-top: 9px;
+    font-size: 14px;
+}
+#checkLeft div input{
+    font-size: 20px;
+    width: 100%;
+    
+}
+#checkLeft div select{
+    font-size: 20px;
+    width: 100%;
+}
+#checkLeft textarea{
+    width: 100%;
+}
+#checkRight{
+
+    margin-right: 50px;
+}
+#subscription{
+    background-color: var(--click);
+    width: 100%;
+    height: 110px;
+    position: relative;
+}
+#subscription h3{
+    font-size: 20px;
+    letter-spacing: 7px;
+    font-weight: bolder;
+}
+#numOfSub{
+    position: absolute;
+    bottom: 14px;
+    left: 70px;
+    
+}
+#numOfSub label{
+    font-size: 20px;
+}
+#abc{
+    position: absolute;
+    right: 10px;
+    width: 450px;
+}
+#checkRightUp{
+    position: relative;
+   /*  margin-left: 40px; */
+    /* border: 1px solid #422308; */
+    height: 230px;
+}
+#checkRightUp h1{
+    text-align: center;
+    padding-bottom: 7px;
+}
+#checkRightUpItem{
+    width: 50vw;
+ 
+    font-size: 16px;
+    display: flex;
+   
+    display: flex;
+    justify-content: space-between;
+}
+#itemSummary{
+    width: 50%;
+    overflow-y:scroll;
+    height: 150px;
+    background-color: whitesmoke;
+    padding-right: 16px;
+
+}
+#sumTotal{
+    position: relative;
+    width: 50%;
+    /* padding: 0px 40px 0px 40px; */
+    margin-left: 17px;
+
+
+}
+#sumTotalTop{
+    padding-left: 12px;
+    padding-right:12px; 
+}
+#est{
+    font-size: 19px;
+    color: #6d3200;
+}
+#sumTotalBottom{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0px;
+    width: 100%;
+    padding-left: 12px;
+    padding-right:12px;
+    font-weight: bolder;
+    font-size: 33px;
+    height: 40px;
+    border-top: 1px solid var(--darkBrown);
+   
+    
+ 
+
+
+}
+#checkRightDown{
+    width: 50vw;
+    height: 300px;
+    font-size: 17px;
+    background-color: var(--click);
+}
+#checkRightDown h1{
+    margin-top: 17px;
+    padding-top: 7px;
+    text-align: center;
+}
+#paymentList div{
+    border: 2px dotted black;
+    padding: 7px;
+    cursor: pointer;
+}
+#placeOrder{
+    margin-top: 60px;
+    font-size: 30px;
+    background-color: 	#422308;
+    color: 	#eec07b;
+}
+#placeOrder:hover{
+    transform: scale(1.1);
+    background-color: 	#6d3200;
+ 
+}
+
+
+
+
+
+#option1{
+    background-color: red;
+    color: green;
+}
+
+
