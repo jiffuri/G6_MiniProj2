@@ -1,0 +1,80 @@
+
+// 
+
+RECENTLY BOUGHT SECTION
+CART HOVER
+CAKE CUSTOMIZ PAGE
+
+
+
+
+
+
+#indexBanner_1{
+    /* background: url("../image/shop_banner/index_banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+    
+
+    /* text-align: center; */
+   /*  padding-top: 120px;
+    padding-bottom: 80px; */
+    min-height: 400px;
+    opacity: .9;
+    position: relative;
+}
+#indexBanner_1 h1{
+    position: absolute;
+    right: 9%;
+    bottom: 50%;
+    color: #422308;
+    font-size: 4vw;
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 2);
+
+}
+#indexBanner_1 h3{
+    position: absolute;
+    right: 9%;
+    bottom: 45%;
+    color: 		#6d3200;
+}
+#indexBanner_1 a{
+    width: 17dvw;
+    height: 12dh;
+    position: absolute;
+    right: 9%;
+    bottom: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

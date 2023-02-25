@@ -1,0 +1,156 @@
+:root{
+  --bodyBack:#ffeaed;
+  --textColor:#eec07b;
+  --starColor:#f67034;
+  --sectionColor:#f7f6f9;
+  --mainTextColor: #422308;
+  --secondaryTextColor:#422308;
+}
+
+.bContainer{
+  width: 100%;
+  gap: .5vw;
+  justify-content: center;
+  /* justify-content: space-around; */
+  
+  text-align: center;
+  height: 400px;
+}
+.bProduct{
+  position: relative;
+  background-color: var(--sectionColor);
+  width: 170px;
+  height: 357px;
+  display:flex ;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  padding:20px 10px 0px;
+  border-radius: 10px;
+  transition: .3s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+
+}
+#topPart{
+  height: 35%;
+  background-image: linear-gradient(to bottom,transparent 30%, 	#f0d1a0 70%);
+ 
+}
+#bottomPart{
+  width: 100%;
+  height: 65%;
+
+}
+.bImage{
+  text-align: center;
+  width: 100%;
+  max-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.bImage img{
+  
+  max-width: 100%;
+  max-height: 100%px;
+}
+.bPrice{
+  width: 100%;
+  /* display: flex;
+  justify-content: space-between; */
+}
+.bPrice h3{
+  font-size: 23px;
+  text-transform: capitalize;
+  color: var(--mainTextColor);
+
+}
+.bPrice span{
+  font-size: 14px;
+  color:var(--secondaryTextColor);
+}
+.whoBought {
+  font-size: 17px;
+  /* line-height: 25px; */
+  color: var(--secondaryTextColor);
+  margin-bottom: 3px;
+}
+.whoBought span{
+  font-weight: bolder;
+}
+.timeFrame{
+  display: flex;
+  font-size: 11px;
+  margin-bottom: 3px;
+  justify-content: center;
+  
+}
+.bStars{
+  width: 100%;
+  height: 20px;
+  font-size: 1.3em;
+  color:var(--starColor);
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 12px;
+}
+
+.buy{
+
+  
+  width: 100%;
+  height: 50px;
+  /* background-color: #f67034; */
+  
+}
+.buy button{
+  width: 130px;
+  height: 90%;
+  padding: 12px 13px;
+  border-radius: 7px;
+  border: none;
+  background: #eec07b;
+  color: 	#422308;
+  font-size: 17px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  cursor:pointer;
+  transition: .5s;
+
+}
+.buy button:hover{
+  transform: scale(1.1);
+  color: #eec07b;
+  background-color: 	#422308;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

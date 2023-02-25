@@ -1,0 +1,201 @@
+/* FOR DESKTOP */
+@media (min-width: 992px) {
+
+    #indexBannerBody{
+        background-image: url(../image/shop_banner/index_banner.png);
+      /*   background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        height: 530px;
+        background-clip: padding-box;
+        padding: 9%; */
+
+
+    }
+   
+}
+/* FOR TABLET */
+@media (max-width: 994px) {
+    #indexBannerBody{
+        background-image: url(../image/shop_banner/max_992.png);
+    }
+}
+
+@media(max-width: 1280px){
+    .bContainer{
+        gap: 23px;
+    }
+    #bItem6{
+        display: none;
+    }
+}
+@media(max-width: 1138px){
+    .bContainer{
+        gap: 30px;
+    }
+    #bItem5{
+        display: none;
+    }
+    #bItem6{
+        display: none;
+    }
+}
+@media (max-width: 1108px){
+    #cartHoverMain{
+        top: 74px;
+        right: 30px;
+    }
+}
+@media (max-width: 786px){
+    .bContainer{
+        gap: 49px;
+    }
+    #bItem4{
+        display: none;
+    }
+    #bItem5{
+        display: none;
+    }
+    #bItem6{
+        display: none;
+    }
+}
+@media (max-width: 643px){
+    .bContainer{
+        gap: 49px;
+    }
+    #bItem3{
+        display: none;
+    }
+    #bItem4{
+        display: none;
+    }
+    #bItem5{
+        display: none;
+    }
+    #bItem6{
+        display: none;
+    }
+    #indexBannerBody h1{
+        color: pink;
+    } #cartImage{
+        display: none;
+    }
+    #insideCart div h2{
+        font-size: 20pxpx;
+    }
+    #cartPlusMinusCon{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cartPlusMinusCon div button{
+        display: none;
+    }
+    .cartInput{
+        width: 25px;
+    }
+    .valueDisplay p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 603px){
+    #indexBannerBody h1{
+        text-align: center;
+    }
+}
+@media (max-width: 417px){
+    .bContainer{
+        gap: 20px;
+    }
+    #bItem3{
+        display: none;
+    }
+    #bItem4{
+        display: none;
+    }
+    #bItem5{
+        display: none;
+    }
+    #bItem6{
+        display: none;
+    }
+    #indexBannerBody h1{
+        text-align: center;
+    }
+    #cartImage{
+        display: none;
+    }
+    #insideCart div h2{
+        font-size: 10px;
+    }
+    #cartPlusMinusCon{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cartPlusMinusCon div button{
+        display: none;
+    }
+    .cartInput{
+        width: 25px;
+    }
+    .valueDisplay p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 390px){
+    .bContainer{
+        gap: 3px;
+    }
+    #bItem3{
+        display: none;
+    }
+    #bItem4{
+        display: none;
+    }
+    #bItem5{
+        display: none;
+    }
+    #bItem6{
+        display: none;
+    }
+    .header .logo{
+        font-size: 20px;
+    }
+    .navbarMain{
+        top: 60px;
+    }
+}
+@media (max-width: 360px){
+    #bItem2{
+        display: none;
+    }
+    #bItem3{
+        display: none;
+    }
+    #bItem4{
+        display: none;
+    }
+    #bItem5{
+        display: none;
+    }
+    #bItem6{
+        display: none;
+    }
+    .header .logo{
+        font-size: 20px;
+    }
+    .navbarMain{
+        top: 60px;
+    }
+
+}
+
+
+
+

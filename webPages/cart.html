@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../cssStyle/myStyle.css">
+    <title>Cart</title>
+</head>
+<body id="cartBody">
+    <header class="header">
+        <a href="#" class="logo"><!-- <i class="fas fa-shopping-basket"></i>-->Bread Temptation</a>
+        <nav class="navbarMain">
+            <a href="../index.html">Home</a>
+            <a href="./shop.html">Products</a>
+            <a href="./about.html">About</a>
+            <a href="./review.html">Review</a>
+            <a href="./contact.html">Contact</a>
+        </nav> 
+
+        <div class="iconsMain">
+            <a id="menu-btn" class="fas fa-bars"></a>
+            <a id="search-btn" class="fas fa-search"></a>
+            <a id="login-btn" class="fas fa-user" onclick="toggleMenu()"></a>
+            <a href="#" id="cart-btn" class="fas fa-shopping-cart active"><span id="cartCounter">0</span></a>
+        
+            
+        </div>
+
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="../image/p04.jpg">
+                    <h3>Oland Sayson</h3>
+                </div>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                    <img src="" alt="">
+                    <p>Edit Profile</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+<!-- NAV END -->
+<div class="heading">
+    <h1 id="customerReview">cart</h1>
+</div>
+ 
+
+<!-- CART BODY 
+        TOP HEADER  -->
+<section id="cartDiv">
+    <div id="cartContainer" class="cartContainerHead">
+        <div class="row">
+            <div class="col-4">
+                <h2>Item</h2>
+            </div>
+            <div class="col-3"> 
+                <h2>Price</h2>
+            </div>
+            <div class="col-2">
+                <h2>Quantity</h2>
+            </div>
+            <div class="col-3">
+                <h2>total</h2>
+            </div>
+        </div>
+    </div> 
+    <div class="cartContainer">
+ <!-- CART ITEM WILL BE INSERT BY JAVASCRIP (LOCADATAINTOCART.JS) -->       
+        
+
+
+    </div>
+</section>
+
+
+
+<!-- CART TOTAL SUMMARY -->
+<div id="cartBottomPanel">
+    <div class="valueDisplay">
+        <p><span>Total ( </span><span id="cartTotalItemDisplay">0 </span><span>item</span> ) ₱ <span id="priceDisplay">0</span>.00</p>
+        <a href="checkout.html" class="btn checkOut">CHECK OUT</a>
+    </div>
+</div>
+
+
+
+
+ 
+
+
+
+<!-- CART HOVER  HIDDEN -->
+<div id="cartHoverMain">
+    <!-- FILES INSERTED HERE BY CARTHOVER.JS -->
+    
+</div>
+
+<!-- CART.CSS -->
+<div id="extraSpace">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i>Home</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>Shop</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>About</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>Review</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>Contact</a>
+        </div>
+        <div class="box">
+            <h3>Extra links</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i>My order</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>My favorite</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>My wishlist</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>My account</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>Terms or use</a>
+        </div>
+        <div class="box">
+            <h3>Social Media</h3>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i>Pinterest</a>
+        </div>
+        <div class="box">
+            <h3>News letter</h3>
+            <p>Subscribe for latest update</p>
+            <form action="">
+                <input type="email" placeholder="Enter you email address">
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+            <!-- <div class="payments">
+                <a href="#"><img src="img/card1.png" alt=""></a>
+                <a href="#"><img src="img/card2.png" alt=""></a>
+                <a href="#"><img src="img/card3.png" alt=""></a>
+                <a href="#"><img src="img/card4.png" alt=""></a>
+                <a href="#"><img src="img/card5.png" alt=""></a>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+  <!-- JAVASCRIPT LINKS -->
+  <script src="../javaScript/popper.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="../javaScript/myScript.js"></script>
+  <script src="../javaScript/nonModule.js"></script>
+  <script src="../main.js"></script> 
+  <script src="../javaScript/localDataIntoCart.js"></script> 
+</body>
+</html>
