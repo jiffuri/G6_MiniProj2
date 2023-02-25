@@ -5,6 +5,8 @@ import {myCart} from './cart.js';
 let myCartCount = 1;
 /* let itemNum = 0; */
 
+// SHOP SELECTION FILTER
+let chooseProduct = document.getElementById("chooseProduct");
 
 function productToCartProcess(pname,pprice,pcontent,psrc){
 
@@ -74,7 +76,7 @@ cardContainer.append(newDiv);
 
 // name, price, content, src
 
-productToCartProcess(q[0].name,q[0].price,q[0].content,q[0].src);
+/* productToCartProcess(q[0].name,q[0].price,q[0].content,q[0].src);
 productToCartProcess(q[1].name,q[1].price,q[1].content,q[1].src);
 productToCartProcess(q[2].name,q[2].price,q[2].content,q[2].src);
 productToCartProcess(q[3].name,q[3].price,q[3].content,q[3].src);
@@ -85,7 +87,7 @@ productToCartProcess(q[8].name,q[8].price,q[8].content,q[8].src);
 productToCartProcess(q[9].name,q[9].price,q[9].content,q[9].src);
 productToCartProcess(q[10].name,q[10].price,q[10].content,q[10].src);
 productToCartProcess(q[11].name,q[11].price,q[11].content,q[11].src);
-productToCartProcess(q[12].name,q[12].price,q[12].content,q[12].src);
+productToCartProcess(q[12].name,q[12].price,q[12].content,q[12].src); */
 
 
 
@@ -115,6 +117,91 @@ let cartBtn1 = document.querySelectorAll("#addCartButton");
         })
        
     })  
+
+
+
+let filterArray = []
+
+
+
+    chooseProduct.addEventListener('click',function(){
+        console.log(chooseProduct.value);
+        filterArray.length = 0;
+        
+        cardContainer.innerHTML = " ";
+       
+
+        q.forEach(function(a){
+            
+            if(a.category == chooseProduct.value){
+
+                console.log('ok');
+                filterArray.push({name: a.name, price: a.price, content: a.content, src: a.src});
+
+            }else{ 
+
+            }
+        })
+        if(chooseProduct.value == 'all'){
+
+            productToCartProcess(q[0].name,q[0].price,q[0].content,q[0].src);
+    productToCartProcess(q[1].name,q[1].price,q[1].content,q[1].src);
+    productToCartProcess(q[2].name,q[2].price,q[2].content,q[2].src);
+    productToCartProcess(q[3].name,q[3].price,q[3].content,q[3].src);
+    productToCartProcess(q[4].name,q[4].price,q[4].content,q[4].src);
+    productToCartProcess(q[6].name,q[6].price,q[6].content,q[6].src);
+    productToCartProcess(q[7].name,q[7].price,q[7].content,q[7].src);
+    productToCartProcess(q[8].name,q[8].price,q[8].content,q[8].src);
+    productToCartProcess(q[9].name,q[9].price,q[9].content,q[9].src);
+    productToCartProcess(q[10].name,q[10].price,q[10].content,q[10].src);
+    productToCartProcess(q[11].name,q[11].price,q[11].content,q[11].src);
+    productToCartProcess(q[12].name,q[12].price,q[12].content,q[12].src);
+
+        }
+        else{
+            filterArray.forEach(function(a){
+                productToCartProcess(a.name,a.price,a.content,a.src);
+            })
+        }
+
+    })
+
+
+
+if(chooseProduct.value == 'all'){
+    productToCartProcess(q[0].name,q[0].price,q[0].content,q[0].src);
+    productToCartProcess(q[1].name,q[1].price,q[1].content,q[1].src);
+    productToCartProcess(q[2].name,q[2].price,q[2].content,q[2].src);
+    productToCartProcess(q[3].name,q[3].price,q[3].content,q[3].src);
+    productToCartProcess(q[4].name,q[4].price,q[4].content,q[4].src);
+    productToCartProcess(q[6].name,q[6].price,q[6].content,q[6].src);
+    productToCartProcess(q[7].name,q[7].price,q[7].content,q[7].src);
+    productToCartProcess(q[8].name,q[8].price,q[8].content,q[8].src);
+    productToCartProcess(q[9].name,q[9].price,q[9].content,q[9].src);
+    productToCartProcess(q[10].name,q[10].price,q[10].content,q[10].src);
+    productToCartProcess(q[11].name,q[11].price,q[11].content,q[11].src);
+    productToCartProcess(q[12].name,q[12].price,q[12].content,q[12].src);
+}else{
+    cardContainer.innerHTML = " ";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
