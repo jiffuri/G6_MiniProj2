@@ -1,0 +1,121 @@
+<section id="recentlyBought">
+        <h1 class="title">Other's<span>Tempted</span><a href="#"></a></h1>
+
+
+        <div class="bContainer row d-flex">
+            
+                <div class="bProduct col-lg-3" id="bItem1">
+                    <div class="bImage" id="topPart">
+                        <img src="./image/shop_products/03_baguette.png" alt="">
+                    </div>
+                    <div id="bottomPart">
+                        <div class="bPrice">
+                            <h3>baguette</h3>
+                            <span>₱ 200.00</span>
+                        </div>
+                        <p class="whoBought">
+                            bought by: <span>Billy</span>
+                        </p>
+                        <p class="timeFrame">12 hours ago</p>
+                        <div class="bStars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="buy">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bProduct col-lg-3" id="bItem2">
+                    <div class="bImage" id="topPart">
+                        <img src="./image/shop_products/donut_1-s.png" alt="">
+                    </div>
+                    <div id="bottomPart">
+                        <div class="bPrice">
+                            <h3>donut 6pcs</h3>
+                            <span>₱ 97.00</span>
+                        </div>
+                        <p class="whoBought">
+                            bought by: <span>Marites</span>
+                        </p>
+                        <p class="timeFrame">
+                            3 hours ago
+                        </p>
+                        <div class="bStars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="buy">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bProduct col-lg-3" id="bItem3">
+                    <div class="bImage" id="topPart">
+                        <img src="./image/shop_products/mango_torte-s.png" alt="">
+                    </div>
+                    <div id="bottomPart">
+                        <div class="bPrice">
+                            <h3>mango torte</h3>
+                            <span>₱ 1,300.00</span>
+                        </div>
+                        <p class="whoBought">
+                            bought by: <span>Batang Quapo</span> 
+                        </p>
+                        <p class="timeFrame">
+                            1 hour ago
+                        </p>
+                        <div class="bStars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="buy">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bProduct col-lg-3" id="bItem4">
+                    <div class="bImage" id="topPart">
+                        <img src="./image/shop_products/01_yemaballs.png" alt="">
+                    </div>
+                    <div id="bottomPart">
+                        <div class="bPrice">
+                            <h3>yema balls</h3>
+                            <span>₱ 110.00</span>
+                        </div>
+                        <p class="whoBought">
+                            bought by: <span>Brando</span>
+                        </p>
+                        <p class="timeFrame">
+                            30 minutes ago
+                        </p>
+                        <div class="bStars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="buy">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+          
+        </div>
+
+
+
+    </section>
