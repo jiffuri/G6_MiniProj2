@@ -31,7 +31,7 @@ function productToCartProcess(pname,pprice,pcontent,psrc){
 
                     <div class="icons">
 
-                        <a class="fas fa-shopping-cart" data-bs-trigger="focus" tabindex="0"
+                        <a class="fas fa-shopping-cart addToCart" data-bs-trigger="focus" tabindex="0"
                             data-bs-toggle="popover" 
                             data-bs-placement="top" 
                             data-bs-custom-class="addToCart"
@@ -102,7 +102,7 @@ addCartAction();
 
 function addCartAction(){
 // ADD TO CART BUTTON
-let cartBtn1 = document.querySelectorAll("#addCartButton"); // ADD CART BUTTON
+let cartBtn1 = document.querySelectorAll(".addToCart"); // ADD CART BUTTON
 cartBtn1.forEach(function(a){
     a.addEventListener("click",function(){
         const aname = this.getAttribute('data-name');
@@ -164,15 +164,15 @@ let filterArray = []
         productToCartProcess(q[10].name,q[10].price,q[10].content,q[10].src);
         productToCartProcess(q[11].name,q[11].price,q[11].content,q[11].src);
         productToCartProcess(q[12].name,q[12].price,q[12].content,q[12].src);
-        addCartAction();  // IN QUESTION
+      
         }
         else{
             filterArray.forEach(function(y){
                 productToCartProcess(y.name,y.price,y.content,y.src);
-                addCartAction(); // IN QUESTION
+                
             })
         }
-
+        addCartAction(); // IN QUESTION
     })
 
 
