@@ -19,11 +19,24 @@
 }
 
 
-#cartSummary{
+#cartSummary_Main{
+    
     height: 800px;
+}
+#displayItem{
+    height: 60%;
 }
 
 
+
+
+#total_Div{
+    
+    bottom: 0;
+    font-size: 2vw;
+}
+
+ 
 
 
 

@@ -45,7 +45,7 @@ export const productList = [
         price: 820.00,
         category: "cake",
         details: "",
-        src: "../image/shop_products/cakes/Red Velvet naked Cake.jpg",
+        src: "../image/shop_products/cakes/Red Velvet Naked Cake.jpg",
         content: "Cal:80 Sugar: 1g Fat: 1g Carbs: 6g"
     },
     {// 7

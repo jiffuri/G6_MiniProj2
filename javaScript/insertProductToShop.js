@@ -117,7 +117,7 @@ cartBtn1.forEach(function(a){
       
         
         cartCounter.innerHTML = myCartCount; // REALTIME COUNT FOR SHOP.HTML
-        console.log(aname);
+      
 
     })
    
