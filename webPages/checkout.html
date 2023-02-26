@@ -66,37 +66,94 @@
 
 <div>
 
-    <div class="row" id="checkBody">
+    <div class="row d-flex justify-content-center" id="checkBody">
 
 <!--  USER INFORMATION -->
-        <div class="col-lg-7 col-m2-12 bg-success" id="deliveryInfo">
-            <div class="bg-secondary" id="subscription">
+        <div class="col-lg-8 col-md-12" id="deliveryInfo">
+            
+            <div class="" id="address">
+                <h2>DELIVERY ADDRESS</h2>
+                    <p><span>Street :   </span>31 Madelaine Street, Parkway Village</p> 
+                    <p><span>State/province/area : </span>Metro Manila</p>
+                    <p><span>City : </span>Quezon City</p>   
+
+                        
+                
+                <div>
+                    <h4>Contact Information</h5>
+                    <div>
+                        <p><span>E-Mail : </span>yongzhen88@luddo.me</p>
+                        <p><span>Mobile No. : </span> +63(2)7335936</p>
+                    </div>
+                </div>
                 
             </div>
-            <div class="bg-light" id="address">
 
-            </div> 
-            <div class="bg-dark" id="paymentOption">
+            <div class="" id="buttonArea"> 
+                <div class="text-center" id="subscription">
+                    <h3>Subscribe >></h3>
+                    <button id="week">7 Days</button>
+                    <button id="fifteenDays">15 DAYS</button>
+                    <button id="month">30 Days</button>
+                    <button id="months">60 Days</button>
+                
+                </div>
 
-            </div>   
-        
+                <div class="text-center" id="paymentOption">
+                    <h3>Payment Method >></h3>
+                    <button id="cashOnDelivery">Cash On Delivery</button>
+                    <button id="creditDebit">Credit / Debit Card</button>
+                    <button id="gcash">Gcash</button>
+                    <button id="payMaya">Maya</button>
+
+                </div>   
+            </div>
         
         
         </div>
 
 <!-- SUMMARY OF CART -->
-        <div class="col-lg-5 col-md-12 bg-primary" id="cartSummary_Main">
-            <div id="displayItem">
+        <div class="col-lg-3 col-md-12" id="cartSummary_Main">
+            <div >
+                <div id="displayItem">
+
+                </div>
+                <hr>
+                <div>
+                    <H3>ORDER SUMMARY</H3>
+                    
+                </div>
+                <div id="additionalFee">
+                    <div class="d-flex justify-content-between">
+                        <p>Sub Total: </p><span id="subTotal"></span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Delivery fee : </p><span id="deliveryFee"></span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Subscription : </p><span id="subs" >0</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>EST. Delivery : </p><span id="deliveryTime"></span>
+                    </div>
+            
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between pr-5 pl-5" id="total_Div">
+                    
+                    <p>TOTAL: </p> <span id="totalNum">0</span>
+                </div>
 
             </div>
-
-
-            <div class="d-flex justify-content-between pr-5 pl-5" id="total_Div">
-                <p>TOTAL: </p> <span id="totalNum">0</span>
+            <div id="orderButton">
+                <h5>Order Notes (Optional)</h5>
+                <textarea name="" id="" cols="50" rows="10"></textarea>
+                <a class='btn' href="">PLACE ORDER</a>
             </div>
         </div>
 
        
+    
 
     </div>
 
