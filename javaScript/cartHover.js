@@ -35,7 +35,7 @@ function viewCartItems(){
     
         let aab = document.createElement('div');
         aab.innerHTML = `<div id="cartHoverName">
-        <h4 >Cart Items</h4>
+        <p >Cart Items</p>
     </div>` 
         cartHoverPanel.append(aab);
 
