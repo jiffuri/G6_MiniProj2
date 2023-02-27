@@ -1,0 +1,19 @@
+<div class="orderButton" id="mod-sample">
+        <div class="orderContainer">
+            <h3>Order for registered customer</h3>
+            <br>
+            Username :<input type="text" placeholder="Username" name="username">
+            <br><br>
+            Password :<input type="password" placeholder="Password" name="password">
+            <br><br>
+            <h3>Oder without registration</h3>
+            <br>
+            Fullname :<input type="fullname" placeholder="Fullname" name="fullname">
+            <br><br>
+            Address :<input type="address" placeholder="address">
+            <div>
+                <button class="btn1" onclick="submitButton()">SUBMIT</button>
+                <button class="btn2" onclick="this.parentNode.parentNode.parentNode.style.display ='none'">Close</button>
+            </div>
+        </div>
+    </div>

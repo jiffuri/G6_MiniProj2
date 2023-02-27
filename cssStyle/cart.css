@@ -1,25 +1,17 @@
 
 
-#cartBody{
-    overflow-x: hidden;
-}
-
-/* .cartContainerHead{
-    padding-bottom: 50px;
-    font-weight: 900;
-}
- */
 
 
-
-
-
-
-
-
-
-#cartDiv{
+.asdf{
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cartDiv{
+    
+    width: 80%;
     min-height: 600px;
 
 }
@@ -77,7 +69,7 @@
     text-align: end;
 }
 #cartImage{
-    max-width: 120px;
+    max-width: 70px;
 }
 #deleteCart{
     margin-left: 33px;
@@ -133,8 +125,12 @@
 
 
 
-
-
+#howMany{
+    text-align: center;
+    width: 32px;
+    height: 23px;
+    font-size: 15px;
+}
 
 
 

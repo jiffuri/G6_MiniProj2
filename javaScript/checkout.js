@@ -31,6 +31,21 @@ let payMaya_Element = document.getElementById("payMaya");
 deliveryTime.innerHTML = est_Temp;
 deliveryFee.innerHTML = deliveryFee_Temp2;
 
+
+let shopNowDisplay_Element = document.getElementById("shopNowDisplay");
+let shopNow_Access = JSON.parse(localStorage.getItem('shopNowStorage'));
+
+
+
+// SALE ITEMS ADDED HERE
+shopNowDisplay_Element.innerHTML = `
+                    
+                    <p>${shopNow_Access[0].name}</p>
+                    <p id="shopNowPrice">₱ ${shopNow_Access[0].price}</p>
+               
+`
+
+
 // GET AND DISPLAY PRODUCT IN THE CART
     localData_Access.forEach(function(d){
 
@@ -40,7 +55,9 @@ deliveryFee.innerHTML = deliveryFee_Temp2;
                             <p>₱ ${d.price}</p>
                         </div>
         `
-    })
+    }
+    )
+
 //-------------------------------------------------------------
 
 
@@ -153,8 +170,6 @@ payMaya_Element.addEventListener('click',function(){
 
 
 
-
-
 function paymentProcess(theActive, non1, non2, non3){
     theActive.style.background = "#422308";
     theActive.style.color = "#eec07b";
@@ -173,8 +188,40 @@ function paymentProcess(theActive, non1, non2, non3){
 
 
 
+let isUser_Login = JSON.parse(localStorage.getItem('isUser_LoggedIn'));
+let userAddress_Element = document.getElementById("userAddress");
+let noUserAddress_Element = document.querySelector(".noUserAddress");
+let noUserSub_Element = document.querySelector(".noUserSub");
+let userSub_Element = document.querySelector(".userSub"); 
 
 
+
+if(isUser_Login == 'true'){
+    userAddress_Element.classList.add('show2');
+    noUserAddress_Element.classList.add("hide");
+    userSub_Element.classList.add('show2');
+    noUserSub_Element.classList.add('hide');
+    
+
+}else if(isUser_Login == 'false'){
+    userAddress_Element.classList.add('hide');
+    noUserAddress_Element.classList.add('show2');
+    userSub_Element.classList.add('hide');
+    noUserSub_Element.classList.add('show2')
+  
+}
+
+
+
+
+
+let selectProb_Element = document.querySelector("#selectProb");
+let deliveryTime_Element = document.querySelector("#deliveryTime");
+
+
+selectProb_Element.addEventListener('click',function(){
+    deliveryTime_Element.innerHTML = this.value;
+})
 
 
 

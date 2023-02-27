@@ -12,7 +12,9 @@
 /* RESPONSIVENESS STYLE LINK */
 @import url(./mid_Size_Res.css);
 @import url(./small_Size_Res.css);
+@import url(./checkout_respo.css);
 
+@import url(./navigation_userPanel.css);
 
     /* SHOP ITEM, NUTRITION FACTS POPOVER */
 .nutritionPopover{
@@ -68,6 +70,9 @@
     opacity: .8; */
 }
 #aboutBanBtn{
+    position: absolute;
+    right: 0;
+    bottom: 7px;
     background-color: #eec07b;
     color: 	#422308;
     transition: .5s;
@@ -132,7 +137,7 @@
     font-size: 7rem;
 }
 #customizeButton{
-    margin-top: 70px;
+   
     width: 212px;
     font-size: 3rem;
     background-color: #eec07b;

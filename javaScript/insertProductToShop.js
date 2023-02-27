@@ -1,16 +1,15 @@
 import {productList as q} from './productDatabase.js';
 import {myCart} from './cart.js';
 
+let heroSectionItem = JSON.parse(localStorage.getItem('shopNowStorage'));
 
+let angValue = heroSectionItem.length;
 
-let myCartCount = 1;
+let myCartCount = 0;
 
 // SHOP SELECTION FILTER
 /* let chooseProduct = document.getElementById("chooseProduct"); */
 let cartCounter = document.getElementById("cartCounter");
-
-
-
 
 
 
@@ -113,14 +112,14 @@ cartBtn1.forEach(function(a){
 
         myCart.push({name: aname, price: aprice, src: aimage}); // PUSH INTO TEMPORARY MYCART ARRAY
 
-        localStorage.setItem("intoLocalStorage", JSON.stringify(myCart));  // PLACE IN LOCAL STORAGE
-      
+          // PLACE IN LOCAL STORAGE
+        localStorage.setItem("intoLocalStorage", JSON.stringify(myCart));
         
         cartCounter.innerHTML = myCartCount; // REALTIME COUNT FOR SHOP.HTML
       
 
     })
-   
+    
 }) 
 
 }

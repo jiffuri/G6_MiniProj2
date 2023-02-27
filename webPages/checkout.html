@@ -32,35 +32,56 @@
             
         </div>
 
-        <div class="sub-menu-wrap" id="subMenu">
-            <div class="sub-menu">
-                <div class="user-info">
-                    <img src="../image/p04.jpg" alt="sdf">
-                    <h3>Oland Sayson</h3>
-                </div>
-                <hr>
-                <a href="#" class="sub-menu-link">
-                    <img src="" alt="">
-                    <p>Edit Profile</p>
-                    <span>></span>
-                </a>
-                <a href="#" class="sub-menu-link">
-                    <img src="" alt="">
-                    <p>Settings & Privacy</p>
-                    <span>></span>
-                </a>
-                <a href="#" class="sub-menu-link">
-                    <img src="" alt="">
-                    <p>Help & Support</p>
-                    <span>></span>
-                </a>
-                <a href="#" class="sub-menu-link">
-                    <img src="" alt="">
-                    <p>Logout</p>
-                    <span>></span>
-                </a>
-            </div>
+         <!-- USER INFORMATION PANEL -->
+<!-- WHEN NOT LOGGED IN -->
+<div class="notLogIn_Panel hide" id="noUser">
+    <div class="notLogIn_Container">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control inputUserName" id="floatingInput3" placeholder="">
+            <label for="floatingInput3">USERNAME</label>
         </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control inputPassword" id="floatingInput4" placeholder="">
+            <label for="floatingInput4">PASSWORD</label>
+        </div>
+        <div class="d-flex justify-content-between">
+            <a class="btn" href="" id="loginAction">LOG IN</a>
+            <a class="myCenter" href="">Create account</a>
+        </div>
+    
+    </div>
+</div>
+<!-- WHEN USER LOGGED IN -->
+<div class="sub-menu-wrap hide" id="subMenu">
+    <div class="sub-menu">
+        <div class="user-info">
+            <img src="../image/p04.jpg">
+            <h3>Oland Sayson</h3>
+        </div>
+        <hr>
+        <a href="#" class="sub-menu-link">
+            <img src="" alt="">
+            <p>Edit Profile</p>
+            <span>></span>
+        </a>
+        <a href="#" class="sub-menu-link">
+            <img src="" alt="">
+            <p>Settings & Privacy</p>
+            <span>></span>
+        </a>
+        <a href="#" class="sub-menu-link">
+            <img src="" alt="">
+            <p>Help & Support</p>
+            <span>></span>
+        </a>
+        <a id="userLogout" href="#" class="sub-menu-link">
+            <img src="" alt="">
+            <p>Logout</p>
+            <span>></span>
+        </a>
+    </div>
+</div>
+<!-- USER INFORMATION PANEL END -->        
     </header>
 <!-- NAVIGATION END -->
 
@@ -72,39 +93,103 @@
         <div class="col-lg-8 col-md-12" id="deliveryInfo">
             
             <div class="" id="address">
-                <h2>DELIVERY ADDRESS</h2>
-                    <p><span>Street :   </span>31 Madelaine Street, Parkway Village</p> 
-                    <p><span>State/province/area : </span>Metro Manila</p>
-                    <p><span>City : </span>Quezon City</p>   
+                <div class="row d-flex" id="userAddress">
+                    <div class="col-lg-7 col-md-12 bbvv">
+                        <h2>DELIVERY ADDRESS</h2>
+                            <p><span>Street :   </span>31 Madelaine Street, Parkway Village</p> 
+                            <p><span>State/province/area : </span>Metro Manila</p>
+                            <p><span>City : </span>Quezon City</p>   
 
-                        
-                
-                <div>
-                    <h4>Contact Information</h5>
-                    <div>
-                        <p><span>E-Mail : </span>yongzhen88@luddo.me</p>
-                        <p><span>Mobile No. : </span> +63(2)7335936</p>
+                        <div>
+                            <h4>Contact Information</h5>
+                            <div>
+                                <p><span>E-Mail : </span>yongzhen88@luddo.me</p>
+                                <p><span>Mobile No. : </span> +63(2)7335936</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 secureImage0">
+                        <img class="img-fluid" src="../image/secure.png" alt="">
                     </div>
                 </div>
-                
+                <div class="noUserAddress">
+        <!-- USER INPUT ADDRESS -->
+                    <div class='row d-flex justify-content-center align-items-center' id="checkLeft">
+
+                        <H3 col-12>ENTER YOUR DELIVER ADDRESS</H3>
+                        <div class="col-lg-4 col-md-12" id="inputArea">
+                            <div>
+                                <label for="" class="required">Email</label><br>
+                                <input type="text" placeholder="">
+                            </div>
+
+                            <div>
+                                <label for="" class="required">Full Name</label><br>
+                                <input type="text" placeholder="">
+                            </div>
+
+                            <div>
+                                <label for="" class="required">Street Address</label><br>
+                                <input type="text" placeholder="">
+                            </div>
+
+                            <div>
+                                <label for="" class="required">State/Province</label><br>
+                                <select type="text" placeholder="state province" id="selectProb">
+                                    <option value="1hr 30min" selected>Metro Manila</option>
+                                    <option value="2 hrs">Rizal</option>
+                                    <option value="2 hrs">Quezon</option>
+                                    <option value="3 hrs">Cavite</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="" class="required">City</label><br>
+                                <input type="text" placeholder="">
+                            </div>
+
+                            <div>
+                                <label for="" class="required">Contact</label><br>
+                                <input type="text" placeholder=""><br>
+                                <!--  -->
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-lg-6 col-md-12" id="secureImage">
+                            <img class="img-fluid" src="../image/secure.png" alt=""><br>
+                            <label for="">Additonal Information</label>
+                            <textarea name="" id="" cols="30" rows="7"></textarea>
+
+                        </div>
+                            
+                    </div>
+                <!-- USER INPUT ADDRESS END -->
+                </div>
             </div>
 
             <div class="" id="buttonArea"> 
-                <div class="text-center" id="subscription">
-                    <h3>Subscribe >></h3>
-                    <button id="week">7 Days</button>
-                    <button id="fifteenDays">15 DAYS</button>
-                    <button id="month">30 Days</button>
-                    <button id="months">60 Days</button>
-                
+                <div class="row text-center noUserSub" id="subscription">
+                    <h3 class="col-lg-4 col-md-12">Subscribe >></h3>                
+                    <button class="col-lg-2 col-md-6" id="week">7 Days</button>
+                    <button class="col-lg-2 col-md-6" id="fifteenDays">15 DAYS</button>
+                    <button class="col-lg-2 col-md-6" id="month">30 Days</button>
+                    <button class="col-lg-2 col-md-6" id="months">60 Days</button>       
                 </div>
 
-                <div class="text-center" id="paymentOption">
-                    <h3>Payment Method >></h3>
-                    <button id="cashOnDelivery">Cash On Delivery</button>
-                    <button id="creditDebit">Credit / Debit Card</button>
-                    <button id="gcash">Gcash</button>
-                    <button id="payMaya">Maya</button>
+                <div class="text-center userSub" id="subscription2">
+                    <!-- <h3 class="col-lg-3 col-md-12">Your Sub</h3> -->
+                
+                    
+                    
+                </div>
+
+                <div class="row text-center" id="paymentOption">
+                    <h3 class="col-lg-3 col-md-12">Payment Method >></h3>
+                    <button col-lg-2 col-md-6 id="cashOnDelivery">Cash On Delivery</button>
+                    <button col-lg-2 col-md-6 id="creditDebit">Credit / Debit Card</button>
+                    <button col-lg-2 col-md-6 id="gcash">Gcash</button>
+                    <button col-lg-2 col-md-6 id="payMaya">Maya</button>
 
                 </div>   
             </div>
@@ -116,8 +201,11 @@
         <div class="col-lg-3 col-md-12" id="cartSummary_Main">
             <div >
                 <H3 style="color:#422308">IN YOUR CART</H3>
+                <div class="d-flex justify-content-between checkOutItems" id="shopNowDisplay">
+                   <!-- SALE ITEMS ADDED HERE -->
+                </div>
                 <div id="displayItem">
-
+ 
                 </div>
                 <hr>
                 <div>
@@ -241,7 +329,7 @@
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
    
 
-   
+    <script type="module" src="../javaScript/myScript.js"></script>
     <script src="../javaScript/nonModule.js"></script>
 
     <script src="../javaScript/checkout.js"></script>

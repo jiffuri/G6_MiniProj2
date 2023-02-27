@@ -1,0 +1,21 @@
+
+
+.notLogIn_Panel{
+
+    position:absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    transition: max-height 0.5s;
+}
+.notLogIn_Panel{
+    max-height: 400px;
+}
+.notLogIn_Container{
+    background: 	#eec07b;
+    color: #422308;
+    padding: 20px;
+    margin: 10px;
+    box-shadow:  0 5px 10px rgba(0,0,0,1);
+}

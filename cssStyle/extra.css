@@ -7,6 +7,9 @@
 .show{
     display: block!important;
 }
+.show2{
+    visibility: visible!important;
+}
 .chageColor{
     color: red;
 }
@@ -14,7 +17,11 @@
     color: blue;
 }
 
-
+.required:before {
+    content: "*";
+    font-weight: bold;
+    color: red;
+}
 
 
 

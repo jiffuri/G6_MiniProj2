@@ -4,7 +4,8 @@
 export const customer = [
     {
         name: 'Olan Sayson',
-        password: 123456,
+        username: 'Akoto123',
+        password: 123,
         exist: 1,
         address: '31 Madelaine Street, Parkway Village',
         state: 'Metro Manila',

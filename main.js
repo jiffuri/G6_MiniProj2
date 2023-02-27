@@ -32,25 +32,43 @@ function prev(){
 ///////////////           Profile sub menu
 
 let subMenu = document.getElementById("subMenu");
+let noLogIn = document.getElementById("noUser");
+
 
 function toggleMenu(){
-    subMenu.classList.toggle("open-menu");
+    /* subMenu.classList.toggle("open-menu2"); */
+    /* noLogIn.classList.toggle("open-menu"); */
 }
 
 
 ///////////////            
 
+let displayPrice = document.getElementById("shopNowPrice");
+let shopNow_Temp = [];
 
-
-
-
+let isUser_Login = JSON.parse(localStorage.getItem('isUser_LoggedIn'));
 
 /* ORDER BUTTON FUNCTION */
-function triggerMod(){
+function triggerMod(itm, p){
 modal.style.display = "flex";
+shopNow_Temp.push({name: itm, price: p});
+localStorage.setItem("shopNowStorage", JSON.stringify(shopNow_Temp));
+console.log(itm,p);
+
+if(isUser_Login == 'true'){
+    window.location.href = "../webPages/checkout.html"
+}else{
+    
+}
+
+
 
 }
-        
+
+
+
+
+
 function submitButton(){
     alert("Your order has been submitted! Thank you!!!")
 }

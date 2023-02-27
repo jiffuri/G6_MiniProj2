@@ -1,0 +1,10 @@
+.titleShop{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 170px;
+    margin-bottom: 48px;
+    padding: 19.2px 0;
+    border-bottom: 1.6px solid rgba(0, 0, 0, 1.6px);
+    color: #6d3200;
+}

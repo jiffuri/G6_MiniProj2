@@ -34,7 +34,30 @@
             <a href="webPages/cart.html" id="cart-btn" class="fas fa-shopping-cart"><span id="cartCounter">0</span></a>
         </div>
 
-        <div class="sub-menu-wrap" id="subMenu">
+
+
+
+    <!-- USER INFORMATION PANEL -->
+<!-- WHEN NOT LOGGED IN -->
+        <div class="notLogIn_Panel hide" id="noUser">
+            <div class="notLogIn_Container">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control inputUserName" id="floatingInput3" placeholder="">
+                    <label for="floatingInput3">USERNAME</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control inputPassword" id="floatingInput4" placeholder="">
+                    <label for="floatingInput4">PASSWORD</label>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <a class="btn" href="" id="loginAction">LOG IN</a>
+                    <a class="myCenter" href="">Create account</a>
+                </div>
+            
+            </div>
+        </div>
+<!-- WHEN USER LOGGED IN -->
+        <div class="sub-menu-wrap hide" id="subMenu">
             <div class="sub-menu">
                 <div class="user-info">
                     <img src="image/p04.jpg">
@@ -56,13 +79,14 @@
                     <p>Help & Support</p>
                     <span>></span>
                 </a>
-                <a href="#" class="sub-menu-link">
+                <a id="userLogout" href="#" class="sub-menu-link">
                     <img src="" alt="">
                     <p>Logout</p>
                     <span>></span>
                 </a>
-            </div>
+            <Buy Now
         </div>
+    <!-- USER INFORMATION PANEL END -->
 </header>
 
 
@@ -73,7 +97,7 @@
                 <div class="content">
                     <span>High-fiber diet bread</span>
                     <h3>upto 20% off</h3>
-                    <a class="btn" onclick="triggerMod()">order</a>
+                    <a class="btn" onclick="triggerMod('High Fiber Loaf', 250)">Buy Now</a>
                 </div>
                 <div class="img">
                     <img src="./image/index_slide/01.png">
@@ -83,7 +107,7 @@
                 <div class="content">
                     <span>Gluten-free diet bread</span>
                     <h3>upto 30% off</h3>
-                    <a class="btn" onclick="triggerMod()">order</a>
+                    <a class="btn" onclick="triggerMod('Diet Bread', 140)">Buy Now</a>
                 </div>
                 <div class="img">
                     <img src="./image/index_slide/02.png" alt="">
@@ -93,7 +117,7 @@
                 <div class="content">
                     <span>Multigrain bread</span>
                     <h3>upto 50% off</h3>
-                    <a class="btn" onclick="triggerMod()">order</a>
+                    <a class="btn" onclick="triggerMod('Multigrain Bread', 120)">Buy Now</a>
                 </div>
                 <div class="img">
                     <img src="./image/index_slide/03.png" alt="">
@@ -108,21 +132,28 @@
 
     <div class="orderButton" id="mod-sample">
         <div class="orderContainer">
-            <h3>Order for registered customer</h3>
-            <br>
-            Username :<input type="text" placeholder="Username" name="username">
-            <br><br>
-            Password :<input type="password" placeholder="Password" name="password">
-            <br><br>
-            <h3>Oder without registration</h3>
-            <br>
-            Fullname :<input type="fullname" placeholder="Fullname" name="fullname">
-            <br><br>
-            Address :<input type="address" placeholder="address">
-            <div>
-                <button class="btn1" onclick="submitButton()">SUBMIT</button>
-                <button class="btn2" onclick="this.parentNode.parentNode.parentNode.style.display ='none'">Close</button>
-            </div>
+            <button class="exit" onclick="this.parentNode.parentNode.style.display ='none'">X</button>
+            <h2 id="h2label">Sign In For Faster Checkout</h2>
+            <h2></h2>
+                <div class="userForm">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control inputUserName" id="floatingInput1" placeholder="">
+                        <label for="floatingInput1">USERNAME</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control inputPassword" id="floatingInput2" placeholder="">
+                        <label for="floatingInput2">PASSWORD</label>
+                    </div>
+                    <a class="labelLink" href="">Forgot your password ?</a><br>
+                    <div class="myCenter signIn"><a class="btn" href="">Sign In</a></div>
+                </div>
+                
+                <div id="aguest">
+                    <h2 class="text-center">Continue As Guest</h2>
+
+                    <div class="myCenter"><a  class="btn" href="webPages/checkout.html">Continue As Guest</a></div><br>    
+                    <a class="myCenter" href="">Create account</a>
+                </div>    
         </div>
     </div>
 

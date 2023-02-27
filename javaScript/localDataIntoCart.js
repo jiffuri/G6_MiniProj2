@@ -25,21 +25,7 @@ function localStorageIntoCartPage(toSrc,toName,toPrice){
                     </div>
                     <div class="col-2 " id="cartQuantity">
                         
-            <div id='cartPlusMinus'>
-                <div class="input-group plus-minus-input" id="cartPlusMinusCon">
-                    <div class="input-group-button">
-                      <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
-                        <i class="fa fa-minus" aria-hidden="true"></i>
-                      </button>
-                    </div>
-                    <input class="input-group-field cartInput" type="number" name="quantity" value="1">
-                    <div class="input-group-button">
-                      <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                      </button>
-                    </div>
-                </div>
-            </div>
+                    <input id='howMany' type="text" placeholder='1'>
 
                     </div>
                     <div class="col-3  d-flex justify-content-end ">
@@ -127,3 +113,23 @@ cartTotalItemDisplay.innerHTML = cartStorage.length+" ";
 
 
 
+
+
+
+
+
+/*     <div id='cartPlusMinus'>
+    <div class="input-group plus-minus-input" id="cartPlusMinusCon">
+        <div class="input-group-button">
+          <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+            <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+        </div>
+        <input class="input-group-field cartInput" type="number" name="quantity" value="1" size='3'>
+        <div class="input-group-button">
+          <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+        </div>
+    </div>
+</div>  */
