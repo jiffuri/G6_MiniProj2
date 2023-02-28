@@ -1,9 +1,9 @@
 import {productList as q} from './productDatabase.js';
 import {myCart} from './cart.js';
 
-let heroSectionItem = JSON.parse(localStorage.getItem('shopNowStorage'));
+//let heroSectionItem = JSON.parse(localStorage.getItem('shopNowStorage'));
 
-let angValue = heroSectionItem.length;
+//let angValue = heroSectionItem.length;
 
 let myCartCount = 0;
 
