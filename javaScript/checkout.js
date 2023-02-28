@@ -188,7 +188,7 @@ function paymentProcess(theActive, non1, non2, non3){
 
 
 
-let isUser_Login = JSON.parse(localStorage.getItem('isUser_LoggedIn'));
+let isUser_Login2 = JSON.parse(localStorage.getItem('isUser_LoggedIn'));
 let userAddress_Element = document.getElementById("userAddress");
 let noUserAddress_Element = document.querySelector(".noUserAddress");
 let noUserSub_Element = document.querySelector(".noUserSub");
@@ -196,14 +196,14 @@ let userSub_Element = document.querySelector(".userSub");
 
 
 
-if(isUser_Login == 'true'){
+if(isUser_Login2 == 'true'){
     userAddress_Element.classList.add('show2');
     noUserAddress_Element.classList.add("hide");
     userSub_Element.classList.add('show2');
     noUserSub_Element.classList.add('hide');
     
 
-}else if(isUser_Login == 'false'){
+}else if(isUser_Login2 == 'false'){
     userAddress_Element.classList.add('hide');
     noUserAddress_Element.classList.add('show2');
     userSub_Element.classList.add('hide');

@@ -10,6 +10,8 @@ let login_Element = document.getElementById("login-btn");
 
 let isUser_Login = JSON.parse(localStorage.getItem('isUser_LoggedIn'))
 
+//CHECKOUT ELEMENT
+let deliveryInfo_Element = document.getElementById("deliveryInfo");
 
 
 /* LOGIN THE USER PROCESS */
@@ -19,10 +21,15 @@ let isUser_Login = JSON.parse(localStorage.getItem('isUser_LoggedIn'))
             noUser.classList.toggle("hide");
             console.log('add show');
             
+           
+
         }
         else if(isUser_Login == 'true'){
             withUser.classList.toggle("hide");
             console.log('add show');
+
+           
+            deliveryInfo_Element.classList.add('blueColor');
         }
 
     })

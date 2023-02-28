@@ -1,3 +1,6 @@
+
+
+
 let orderNowPanel_Element = document.getElementById("mod-sample");
     let h2label = document.getElementById("h2label");
     let userForm = document.querySelector(".userForm"); // TOP PARTT

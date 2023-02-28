@@ -6,7 +6,7 @@
   --mainTextColor: #422308;
   --secondaryTextColor:#422308;
 }
-
+ 
 .bContainer{
   width: 100%;
   gap: .5vw;
@@ -57,11 +57,12 @@
 }
 .bPrice{
   width: 100%;
+  margin-top: 7px;
   /* display: flex;
   justify-content: space-between; */
 }
 .bPrice h3{
-  font-size: 23px;
+  font-size: 18px;
   text-transform: capitalize;
   color: var(--mainTextColor);
 
@@ -71,7 +72,7 @@
   color:var(--secondaryTextColor);
 }
 .whoBought {
-  font-size: 17px;
+  font-size: 14px;
   /* line-height: 25px; */
   color: var(--secondaryTextColor);
   margin-bottom: 3px;

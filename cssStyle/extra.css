@@ -10,11 +10,11 @@
 .show2{
     visibility: visible!important;
 }
-.chageColor{
+.changeColor{
     color: red;
 }
 .blueColor{
-    color: blue;
+    color: blue!important;
 }
 
 .required:before {
@@ -22,8 +22,9 @@
     font-weight: bold;
     color: red;
 }
-
-
+.clickableBackground{
+    background-color: #f0d1a0!important;
+}
 
 
 

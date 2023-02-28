@@ -41,10 +41,15 @@
         display: none;
     }
 }
-@media (max-width: 1108px){
+@media (max-width: 1108px){ 
     #cartHoverMain{
         top: 74px;
         right: 30px;
+    }
+}
+@media (max-width: 991px){
+    #shopHead{
+        margin-bottom: 350px;
     }
 }
 @media (max-width: 786px){
@@ -59,6 +64,13 @@
     }
     #bItem6{
         display: none;
+    }
+}
+@media (max-width: 700px){
+
+    #cartImage{
+        display: none;
+        margin-left: 0px;
     }
 }
 @media (max-width: 643px){
@@ -81,6 +93,7 @@
         color: pink;
     } #cartImage{
         display: none;
+        
     }
     #insideCart div h2{
         font-size: 20pxpx;
@@ -101,12 +114,55 @@
         font-size: 20px;
     }
 }
-@media (max-width: 603px){
+@media (max-width: 605px){
     #indexBannerBody h1{
         text-align: center;
     }
+    #insideCart div p{
+        font-size: 13px;
+    }                       /* CART ITEMS */
+    #insideCart div h2{
+        font-size: 10px;
+    }
+    #insideCart div p{
+        font-size: 10px;
+        font-weight: bolder;
+    }
+    #insideCart input{
+        width: 19px;
+        height: 19px;
+    }
+    #insideCart div img{
+        width: 13px;
+        height: 13px;
+    }                       /* CART ITEMS END */
 }
-@media (max-width: 417px){
+@media (max-width: 459px){
+                            /* CART ITEMS */
+    /* #insideCart div h2{
+        font-size: 2px;
+    
+    }
+    #insideCart div p{
+        font-size: 7px;
+        font-weight: bolder;
+    }
+    #insideCart input{
+        width: 19px;
+        height: 19px;
+        
+    }
+    #insideCart div img{
+        width: 13px;
+        height: 13px;
+    }         */               /* CART ITEMS END */
+}
+@media (max-width: 512px){
+    #shopHeadContainer{
+        margin-bottom: 600px;
+    }
+}
+@media (max-width: 459px){
     .bContainer{
         gap: 20px;
     }
@@ -129,15 +185,10 @@
         display: none;
     }
     #insideCart div h2{
-        font-size: 10px;
+        font-size: 7px;
     }
-    #cartPlusMinusCon{
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #cartPlusMinusCon div button{
+
+    #cartPlusMinusCon input{
         display: none;
     }
     .cartInput{
