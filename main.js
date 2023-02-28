@@ -56,7 +56,7 @@ localStorage.setItem("shopNowStorage", JSON.stringify(shopNow_Temp));
 console.log(itm,p);
 
 if(isUser_Login == 'true'){
-    window.location.replace = "https://jiffuri.github.io/G6_MiniProj2/webPages/checkout.html"
+    window.location.href = "https://jiffuri.github.io/G6_MiniProj2/webPages/checkout.html/"
 }else{
     
 }
