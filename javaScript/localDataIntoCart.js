@@ -25,7 +25,7 @@ function localStorageIntoCartPage(toSrc,toName,toPrice){
                     </div>
                     <div class="col-2 " id="cartQuantity">
                         
-                    <input id='howMany' type="text" placeholder='1'>
+                    <input class='howMany' type="text" placeholder='1'>
 
                     </div>
                     <div class="col-3  d-flex justify-content-end ">
